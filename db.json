@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "firstName": "INFOSYS",
+      "lastName": "name",
+      "email": "yograjput6662@gmail.com",
+      "phone": "9765618373",
+      "_id": 0.15155487566722425,
+      "id": 1
+    },
+    {
+      "firstName": "INFOSYS",
+      "lastName": "name",
+      "email": "yograjput6662@gmail.com",
+      "phone": "9765618373",
+      "_id": 0.36264625709552956,
+      "id": 2
+    },
+    {
+      "firstName": "INFOSYS",
+      "lastName": "name",
+      "email": "yograjput6662@gmail.com",
+      "phone": "9765618373",
+      "_id": 0.920558806829751,
+      "id": 3
+    },
+    {
+      "firstName": "Weoto",
+      "lastName": "Tech Labs",
+      "email": "swap.mythbuster@gmail.com",
+      "phone": "9765618373",
+      "_id": 0.4849451279603423,
+      "id": 4
+    }
+  ]
+}
