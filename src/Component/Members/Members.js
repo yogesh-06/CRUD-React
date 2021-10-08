@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import AddUser from "./AddUser";
+import UpdateUser from "./UpdateUser";
 const Members = () => {
   const [addUserForm, setaAdUserForm] = useState(false);
+  const [updateUser, setUpdateUser] = useState(false);
+
   const [user, setUser] = useState([]);
+
+  const [editUser, setEditUser] = useState(null);
 
   useEffect(() => {
     loadUsers();
@@ -15,8 +20,13 @@ const Members = () => {
   };
 
   const handleAddUser = (active) => {
-    console.log(active);
     setaAdUserForm(active);
+    setUpdateUser(false);
+  };
+  const handleUpdateUser = (active, userData) => {
+    setUpdateUser(active);
+    setaAdUserForm(false);
+    setEditUser(userData);
   };
 
   const handleDelet = async (id) => {
@@ -27,9 +37,16 @@ const Members = () => {
   return (
     <>
       {addUserForm && <AddUser loadUsers={loadUsers} onClick={handleAddUser} />}
+      {updateUser && (
+        <UpdateUser
+          loadUsers={loadUsers}
+          editUser={editUser}
+          onClick={handleUpdateUser}
+        />
+      )}
 
       <div
-        className="container  py-1 mt-5 backgrounds mb-5"
+        className="container  py-1 mt-5 backgrounds mb-5 overflow-visible"
         style={{
           boxShadow: "-1px 8px 24px 6px rgba(0,0,0,0.36)",
           WebkitBoxShadow: "-1px 8px 24px 6px rgba(0,0,0,0.36)",
@@ -38,7 +55,7 @@ const Members = () => {
         }}
       >
         <div
-          className="row rows-cols-4 border-bottom py-2 "
+          className="row border-bottom py-2 "
           style={{ fontFamily: "arial" }}
         >
           <div className="col">
@@ -53,9 +70,9 @@ const Members = () => {
           <div className="col ">
             <button
               onClick={() => handleAddUser(true)}
-              to="/AddUser"
               type="button"
               className="btn btn-primary btn-sm position-relative"
+              // to="/AddUser"
               // data-bs-toggle="modal"
               // data-bs-target="#exampleModal"
             >
@@ -68,16 +85,21 @@ const Members = () => {
         </div>
         {user.map((user, index) => {
           return (
-            <div className="row row-cols-4 border-bottom py-1 hover">
+            <div className="row row-cols-4 border-bottom py-1 hover ">
               <div className="col">
                 {user.firstName} {user.lastName}
               </div>
               <div className="col ">{user.email}</div>
               <div className="col ">{user.phone}</div>
               <div className="col">
-                <button className="btn btn-sm btn-light me-1">Edit</button>
                 <button
-                  className="btn btn-sm btn-light"
+                  className="btn btn-sm btn-outline-info me-1"
+                  onClick={() => handleUpdateUser(true, user)}
+                >
+                  Edit
+                </button>
+                <button
+                  className="btn btn-sm btn-outline-danger"
                   onClick={() => handleDelet(user.id)}
                 >
                   Delete

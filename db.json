@@ -1,36 +1,108 @@
 {
   "users": [
     {
-      "firstName": "INFOSYS",
-      "lastName": "name",
-      "email": "yograjput6662@gmail.com",
-      "phone": "9765618373",
-      "_id": 0.15155487566722425,
-      "id": 1
-    },
-    {
-      "firstName": "INFOSYS",
-      "lastName": "name",
-      "email": "yograjput6662@gmail.com",
-      "phone": "9765618373",
-      "_id": 0.36264625709552956,
-      "id": 2
-    },
-    {
-      "firstName": "INFOSYS",
-      "lastName": "name",
-      "email": "yograjput6662@gmail.com",
-      "phone": "9765618373",
-      "_id": 0.920558806829751,
-      "id": 3
-    },
-    {
       "firstName": "Weoto",
       "lastName": "Tech Labs",
       "email": "swap.mythbuster@gmail.com",
       "phone": "9765618373",
       "_id": 0.4849451279603423,
       "id": 4
+    },
+    {
+      "firstName": "TATA",
+      "lastName": "Motars",
+      "email": "tata.m@rediffmail.com",
+      "phone": "098767545234",
+      "password": "242415",
+      "confirmPassword": "242415",
+      "id": 5
+    },
+    {
+      "firstName": "APLE",
+      "lastName": "Pvt Ltd",
+      "email": "steveapp.ios@yahoo.in",
+      "phone": "7694783068",
+      "id": 7
+    },
+    {
+      "firstName": "TATA",
+      "lastName": "Consultancy Services",
+      "email": "tcs.pune@rediffmail.com",
+      "phone": "9764716069",
+      "_id": 0.5378274875837414,
+      "id": 8
+    },
+    {
+      "firstName": "INFOSYS",
+      "lastName": "Tech Labs",
+      "email": "swap.mythbuster@gmail.com",
+      "phone": "9765618373",
+      "_id": 0.980282201401141,
+      "id": 9
+    },
+    {
+      "firstName": "Google",
+      "lastName": "Engines",
+      "email": "worldwidegoogle.engine@gmail.com",
+      "phone": "098767545234",
+      "_id": 0.6958177813860642,
+      "id": 10
+    },
+    {
+      "firstName": "Wipro",
+      "lastName": "Limited",
+      "email": "bang1980@wipro.com",
+      "phone": "04563789475",
+      "password": "242415",
+      "confirmPassword": "242415",
+      "id": 11
+    },
+    {
+      "firstName": "INFOSYS",
+      "lastName": "Tech Labs",
+      "email": "sn.murties.info@infosys.in",
+      "phone": "09168681186",
+      "id": 12
+    },
+    {
+      "firstName": "Gaurav",
+      "lastName": "Deshmukh",
+      "email": "gd.brand1995@gmail.com",
+      "phone": "8378916348",
+      "_id": 0.026748613094840445,
+      "id": 13
+    },
+    {
+      "firstName": "Yuvraj ",
+      "lastName": "Sarvaiya",
+      "email": "yuvi678@gmail.com",
+      "phone": "9164834375",
+      "_id": 0.6897940439643102,
+      "id": 14
+    },
+    {
+      "firstName": "Google",
+      "lastName": "Engines",
+      "email": "worldwidegoogle.engine@gmail.com",
+      "phone": "9764716069",
+      "_id": 0.7256044819037812,
+      "id": 15
+    },
+    {
+      "firstName": "Weoto",
+      "lastName": "Tech Labs",
+      "email": "swap.mythbuster@gmail.com",
+      "phone": "098767545234",
+      "_id": 0.2044409551850379,
+      "id": 16
+    },
+    {
+      "firstName": "first",
+      "lastName": "name",
+      "email": "example@demo.com",
+      "phone": "9764716069",
+      "_id": 0.6255303936838714,
+      "id": 17
     }
   ]
 }

@@ -18,9 +18,10 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Route path="/DefaultPage">
+        <Route exact path="/">
           <DefaultPage />
         </Route>
+
         <Switch>
           <Route path="/SignupPage">
             <SignupPage />

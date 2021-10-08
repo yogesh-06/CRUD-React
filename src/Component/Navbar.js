@@ -22,7 +22,7 @@ function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <a className="navbar-brand" href="/DefaultPage">
+          <a className="navbar-brand" href="/">
             WEOTO
           </a>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -52,16 +52,14 @@ function Navbar() {
                 </Link>
               </li>
             </ul>
-            <form className="d-flex">
+            <form className="d-flex border-bottom border-warning px-1">
               <input
-                className="form-control me-2 bg-transparent border-0 border border-warning border-bottom rounded-0 py-0"
+                className="form-control m-0 bg-transparent border-0 rounded-0 p-0  "
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn btn-primary" type="submit">
-                Search
-              </button>
+              <i className="fa fa-search btn text-light" type="submit"></i>
             </form>
           </div>
         </div>
